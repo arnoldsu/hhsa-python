@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hhsa-python"
+version = "0.2.0"
+description = "Python implementation of two-layer Hilbert-Huang spectral analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Academic use only"}
+authors = [{name = "Wei-Kuang Liang et al. (original MATLAB); Python port"}]
+dependencies = ["numpy>=1.23", "scipy>=1.9", "matplotlib>=3.6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+hhsa-example = "hhsa.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
