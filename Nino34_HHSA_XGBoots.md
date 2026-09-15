@@ -490,7 +490,7 @@ PYTHONPATH=src python -m pytest -q
 7. 使用 no-LF、shuffled-LF、real-LF 和双 oracle 消融判断 AM 的真实贡献。
 
 
-![Here is a detailed diagram that breaks down how XGBoost operates, moving from the basic concept of iterative boosting to the specific optimizations that give it its speed and accuracy.](docs/images/Gemini_Generated_Image_henegnhenegnhene.png)
+![HHSA XGBoost ](docs/images/Gemini_Generated_Image_henegnhenegnhene.png)
 
 
 这可以被描述为：
