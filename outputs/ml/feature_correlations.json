@@ -1,0 +1,248 @@
+{
+  "3": [
+    {
+      "feature": "nino34_lag0",
+      "correlation": 0.780340572336772
+    },
+    {
+      "feature": "nino34_lag1",
+      "correlation": 0.6759568116360373
+    },
+    {
+      "feature": "IMF_4_lag0",
+      "correlation": 0.6166290640713096
+    },
+    {
+      "feature": "IMF_4_lag1",
+      "correlation": 0.582677217011837
+    },
+    {
+      "feature": "nino34_lag2",
+      "correlation": 0.5680252219502808
+    },
+    {
+      "feature": "IMF_4_lag3",
+      "correlation": 0.4885038046271834
+    },
+    {
+      "feature": "IMF_3_lag0",
+      "correlation": 0.47558393829305606
+    },
+    {
+      "feature": "nino34_lag3",
+      "correlation": 0.4554464140845696
+    },
+    {
+      "feature": "FM_m0_c3_lag0",
+      "correlation": 0.40158337101240593
+    },
+    {
+      "feature": "FM_m0_c3_lag1",
+      "correlation": 0.3932601071857065
+    },
+    {
+      "feature": "IMF_3_lag1",
+      "correlation": 0.3754408994927625
+    },
+    {
+      "feature": "FM_m0_c3_lag3",
+      "correlation": 0.37370978540770666
+    },
+    {
+      "feature": "IMF2_m2_c1_lag6",
+      "correlation": -0.36895292007392416
+    },
+    {
+      "feature": "IMF_5_lag0",
+      "correlation": 0.36061265625191136
+    },
+    {
+      "feature": "IMF_5_lag1",
+      "correlation": 0.35462938601792493
+    },
+    {
+      "feature": "nino34_lag4",
+      "correlation": 0.35206972704065775
+    },
+    {
+      "feature": "IMF_5_lag3",
+      "correlation": 0.33849530483231555
+    },
+    {
+      "feature": "IMF2_m2_c1_lag3",
+      "correlation": -0.337882620869484
+    },
+    {
+      "feature": "IMF2_m0_c3_lag0",
+      "correlation": 0.31709397758130925
+    },
+    {
+      "feature": "FM_m0_c3_lag6",
+      "correlation": 0.3159686824488948
+    }
+  ],
+  "6": [
+    {
+      "feature": "IMF_4_lag0",
+      "correlation": 0.4885526223566907
+    },
+    {
+      "feature": "nino34_lag0",
+      "correlation": 0.45775834619098654
+    },
+    {
+      "feature": "IMF_3_lag6",
+      "correlation": -0.44702496673779263
+    },
+    {
+      "feature": "IMF_4_lag1",
+      "correlation": 0.43013269394586723
+    },
+    {
+      "feature": "FM_m0_c3_lag0",
+      "correlation": 0.37523779581463024
+    },
+    {
+      "feature": "IMF2_m2_c1_lag3",
+      "correlation": -0.3697049196568004
+    },
+    {
+      "feature": "FM_m0_c3_lag1",
+      "correlation": 0.35761314857213533
+    },
+    {
+      "feature": "IMF2_m2_c1_lag1",
+      "correlation": -0.35433781756582106
+    },
+    {
+      "feature": "IMF2_m2_c1_lag6",
+      "correlation": -0.3535389503296574
+    },
+    {
+      "feature": "nino34_lag1",
+      "correlation": 0.3514614435179615
+    },
+    {
+      "feature": "IMF_5_lag0",
+      "correlation": 0.34029150809798875
+    },
+    {
+      "feature": "IMF2_m2_c1_lag0",
+      "correlation": -0.33897603257088127
+    },
+    {
+      "feature": "IMF_5_lag1",
+      "correlation": 0.3301592598133961
+    },
+    {
+      "feature": "FM_m0_c3_lag3",
+      "correlation": 0.316633589224024
+    },
+    {
+      "feature": "IMF_5_lag3",
+      "correlation": 0.3063779018409283
+    },
+    {
+      "feature": "am_1_lag6",
+      "correlation": -0.29939127933208565
+    },
+    {
+      "feature": "IMF_4_lag3",
+      "correlation": 0.2958082466826002
+    },
+    {
+      "feature": "am_1_lag3",
+      "correlation": -0.2923426779765916
+    },
+    {
+      "feature": "FM_m2_c0_lag0",
+      "correlation": -0.28247180568371055
+    },
+    {
+      "feature": "am_1_lag1",
+      "correlation": -0.27754539533847833
+    }
+  ],
+  "12": [
+    {
+      "feature": "IMF_3_lag1",
+      "correlation": -0.46989612033947165
+    },
+    {
+      "feature": "IMF_3_lag3",
+      "correlation": -0.45469071952117557
+    },
+    {
+      "feature": "IMF_3_lag0",
+      "correlation": -0.44344312637432265
+    },
+    {
+      "feature": "IMF2_m2_c1_lag0",
+      "correlation": -0.3581965028226856
+    },
+    {
+      "feature": "IMF_4_lag6",
+      "correlation": -0.3428488684957831
+    },
+    {
+      "feature": "IMF2_m2_c1_lag1",
+      "correlation": -0.341916918756238
+    },
+    {
+      "feature": "IMF_3_lag6",
+      "correlation": -0.30739647027864603
+    },
+    {
+      "feature": "IMF2_m0_c3_lag6",
+      "correlation": -0.2954187906860433
+    },
+    {
+      "feature": "IMF2_m2_c1_lag3",
+      "correlation": -0.29533047040333366
+    },
+    {
+      "feature": "am_1_lag0",
+      "correlation": -0.28853914784763873
+    },
+    {
+      "feature": "am_1_lag1",
+      "correlation": -0.28402375726533124
+    },
+    {
+      "feature": "am_3_lag6",
+      "correlation": -0.28153958543935254
+    },
+    {
+      "feature": "IMF_5_lag0",
+      "correlation": 0.270762840273901
+    },
+    {
+      "feature": "am_1_lag3",
+      "correlation": -0.260954754959185
+    },
+    {
+      "feature": "IMF_5_lag1",
+      "correlation": 0.25417209843281596
+    },
+    {
+      "feature": "FM_m0_c3_lag0",
+      "correlation": 0.2511204583952026
+    },
+    {
+      "feature": "IMF2_m3_c0_lag6",
+      "correlation": -0.2503761865104451
+    },
+    {
+      "feature": "am_3_lag3",
+      "correlation": -0.24971821605474623
+    },
+    {
+      "feature": "FM_m0_c7_lag3",
+      "correlation": -0.24481126530253725
+    },
+    {
+      "feature": "IMF_6_lag0",
+      "correlation": 0.2431954852418122
+    }
+  ]
+}

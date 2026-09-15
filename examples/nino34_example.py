@@ -13,10 +13,36 @@ from scipy.ndimage import gaussian_filter
 from hhsa import decompose, project
 
 
+def save_features(path: Path, dates: np.ndarray, signal: np.ndarray,
+                  sample_rate: float, result) -> None:
+    """Save the monthly two-layer HHSA decomposition for downstream analysis."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    np.savez_compressed(
+        path,
+        schema_version=np.array("1.0"),
+        date=dates.astype("datetime64[D]").astype(str),
+        nino34_anomaly_c=signal,
+        sample_rate_per_year=np.array(sample_rate),
+        IMF=result.IMF,
+        fm=result.fm,
+        am=result.am,
+        IMF2=result.IMF2,
+        FM=result.FM,
+        AM=result.AM,
+        first_layer_axis_order=np.array("time,carrier_mode"),
+        second_layer_axis_order=np.array("time,modulation_mode,carrier_mode"),
+        note=np.array(
+            "Offline full-record HHSA decomposition; not causal forecast features"
+        ),
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=Path, default=Path("data/nino34_monthly.npz"))
     parser.add_argument("--output", type=Path, default=Path("outputs/nino34_hhsa.png"))
+    parser.add_argument("--features", type=Path,
+                        default=Path("outputs/nino34_hhsa_features.npz"))
     parser.add_argument("--max-imfs", type=int, default=8)
     parser.add_argument("--max-modulation-imfs", type=int, default=6)
     args = parser.parse_args()
@@ -29,6 +55,7 @@ def main() -> None:
     result = decompose(signal, sample_rate, max_imfs=args.max_imfs,
                        max_modulation_imfs=args.max_modulation_imfs,
                        upsample_level=1)
+    save_features(args.features, dates, signal, sample_rate, result)
     spectrum = project(result, start=0, stop=signal.size, time_bins=120,
                        bins_per_octave=8, carrier_range=(-4.0, 1.0),
                        modulation_range=(-6.0, 0.0))
@@ -55,6 +82,11 @@ def main() -> None:
     axes[1].set_facecolor("#eeeeee")
     fig.colorbar(image, ax=axes[1], label="Relative energy (dB)")
     fig.savefig(args.output, dpi=180)
+    reconstruction_error = np.max(np.abs(result.IMF.sum(axis=1) - signal))
+    print(f"Saved {args.features}")
+    print(f"  IMF/fm/am shape: {result.IMF.shape}")
+    print(f"  IMF2/FM/AM shape: {result.IMF2.shape}")
+    print(f"  max reconstruction error: {reconstruction_error:.3e}")
     print(f"Saved {args.output}")
 
 
