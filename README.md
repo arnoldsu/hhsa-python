@@ -1,5 +1,8 @@
 # HHSA Python
 
+# HHSA-Python: Holo-Hilbert Spectral Analysis for Nonlinear and Non-Stationary Time Series
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22884720.svg)](https://doi.org/10.5281/zenodo.22884720)
 Python translation of the standalone two-layer Hilbert-Huang Spectral Analysis
 (HHSA) workflow in `neurohhsa_ex1.m`.
 
@@ -201,3 +204,31 @@ only the strongest features, use `-30`. Increasing `bins_per_octave` changes
 frequency resolution and computation size; it does not by itself fix poor colour
 normalization. The synthetic AM example uses 16 bins per octave and detects
 19.870 Hz carrier / 2.000 Hz modulation for the expected 20 Hz / 2 Hz signal.
+
+## References
+
+The theoretical basis of this package follows the Hilbert-Huang
+Transform (HHT) and Holo-Hilbert Spectral Analysis (HHSA) framework.
+
+1. Huang, N. E., Hu, K., Yang, A. C. C., Chang, H.-C., Jia, D.,
+   Liang, W.-K., Yeh, J. R., Kao, C.-L., Juan, C.-H., Peng, C. K.,
+   Meijer, J. H., Wang, Y.-H., Long, S. R., & Wu, Z. (2016).
+   **On Holo-Hilbert spectral analysis: a full informational spectral
+   representation for nonlinear and non-stationary data.**
+   *Philosophical Transactions of the Royal Society A*, 374(2065),
+   20150206.
+   https://doi.org/10.1098/rsta.2015.0206
+
+2. Huang, N. E., Shen, Z., Long, S. R., Wu, M. L. C., Shih, H. H.,
+   Zheng, Q., Yen, N.-C., Tung, C. C., & Liu, H. H. (1998).
+   **The empirical mode decomposition and the Hilbert spectrum for
+   nonlinear and non-stationary time series analysis.**
+   *Proceedings of the Royal Society A*, 454(1971), 903–995.
+   https://doi.org/10.1098/rspa.1998.0193
+
+3. Huang, N. E., Wu, M. L. C., Long, S. R., Shen, S. S. P.,
+   Qu, W., Gloersen, P., & Fan, K. L. (2003).
+   **A confidence limit for the empirical mode decomposition and
+   Hilbert spectral analysis.**
+   *Proceedings of the Royal Society A*, 459(2037), 2317–2345.
+   https://doi.org/10.1098/rspa.2003.1123
