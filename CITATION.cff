@@ -1,0 +1,123 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+
+title: "HHSA-Python: Holo-Hilbert Spectral Analysis for Nonlinear and Non-Stationary Time Series"
+
+type: software
+
+authors:
+  - family-names: "Sullivan"
+    given-names: "Arnold"
+    orcid: "https://orcid.org/0000-0002-5712-6195"
+
+version: 1.0.0
+
+date-released: 2026-09-22
+
+repository-code: "https://github.com/arnoldsu/hhsa-python"
+
+keywords:
+  - Holo-Hilbert spectral analysis
+  - HHSA
+  - Hilbert-Huang transform
+  - HHT
+  - empirical mode decomposition
+  - EMD
+  - Hilbert spectrum
+  - amplitude modulation
+  - instantaneous frequency
+  - nonlinear time series
+  - non-stationary time series
+  - Python
+
+references:
+  - type: article
+    authors:
+      - family-names: "Huang"
+        given-names: "Norden E."
+      - family-names: "Hu"
+        given-names: "Kun"
+      - family-names: "Yang"
+        given-names: "Albert C. C."
+      - family-names: "Chang"
+        given-names: "Hsing-Chih"
+      - family-names: "Jia"
+        given-names: "Deng"
+      - family-names: "Liang"
+        given-names: "Wei-Kuang"
+      - family-names: "Yeh"
+        given-names: "Jia Rong"
+      - family-names: "Kao"
+        given-names: "Chu-Lan"
+      - family-names: "Juan"
+        given-names: "Chi-Hung"
+      - family-names: "Peng"
+        given-names: "Chung Kang"
+      - family-names: "Meijer"
+        given-names: "Johanna H."
+      - family-names: "Wang"
+        given-names: "Yung-Hung"
+      - family-names: "Long"
+        given-names: "Steven R."
+      - family-names: "Wu"
+        given-names: "Zhaohua"
+    title: "On Holo-Hilbert spectral analysis: a full informational spectral representation for nonlinear and non-stationary data"
+    journal: "Philosophical Transactions of the Royal Society A"
+    year: 2016
+    volume: 374
+    issue: 2065
+    doi: "10.1098/rsta.2015.0206"
+
+  - type: article
+    authors:
+      - family-names: "Huang"
+        given-names: "Norden E."
+      - family-names: "Shen"
+        given-names: "Zheng"
+      - family-names: "Long"
+        given-names: "Steven R."
+      - family-names: "Wu"
+        given-names: "Man-Li C."
+      - family-names: "Shih"
+        given-names: "Hsing H."
+      - family-names: "Zheng"
+        given-names: "Quanan"
+      - family-names: "Yen"
+        given-names: "Nai-Chyuan"
+      - family-names: "Tung"
+        given-names: "Chi Chao"
+      - family-names: "Liu"
+        given-names: "Henry H."
+    title: "The empirical mode decomposition and the Hilbert spectrum for nonlinear and non-stationary time series analysis"
+    journal: "Proceedings of the Royal Society A"
+    year: 1998
+    volume: 454
+    issue: 1971
+    start: 903
+    end: 995
+    doi: "10.1098/rspa.1998.0193"
+
+  - type: article
+    authors:
+      - family-names: "Huang"
+        given-names: "Norden E."
+      - family-names: "Wu"
+        given-names: "Man-Li C."
+      - family-names: "Long"
+        given-names: "Steven R."
+      - family-names: "Shen"
+        given-names: "Samuel S. P."
+      - family-names: "Qu"
+        given-names: "Wendong"
+      - family-names: "Gloersen"
+        given-names: "Per"
+      - family-names: "Fan"
+        given-names: "Kuang L."
+    title: "A confidence limit for the empirical mode decomposition and Hilbert spectral analysis"
+    journal: "Proceedings of the Royal Society A"
+    year: 2003
+    volume: 459
+    issue: 2037
+    start: 2317
+    end: 2345
+    doi: "10.1098/rspa.2003.1123"
