@@ -13,6 +13,7 @@ instantaneous amplitude and frequency estimation, second-layer amplitude
 decomposition, and Holo-Hilbert spectral projection.
 
 No third-party Python EMD package is required for the core decomposition.
+Academic, non-commercial use only. See [LICENSE](LICENSE).
 
 <p align="center">
   <img src="outputs/HHS_ex1_python.png"
@@ -286,6 +287,50 @@ This example demonstrates application of the same two-layer HHSA framework
 used in the synthetic experiment to a real climate time series.
 
 ---
+
+This example demonstrates application of the same two-layer HHSA framework
+used in the synthetic experiment to a real climate time series.
+
+---
+
+## Related HHSA Climate Applications
+
+The HHSA-Python framework has been further applied to climate-index
+prediction experiments combining HHSA-derived features with neural-network
+approaches.
+
+### Niño3.4 / ENSO Forecast Experiment
+
+[**HHSA-Sohail Niño3.4 Forecast Experiment**](https://github.com/arnoldsu/hhsa_sohail_n34)
+
+This project applies HHSA-derived information to Niño3.4 prediction and
+investigates whether ENSO event timing and event strength can be modeled
+separately using neural networks.
+
+### Pacific Meridional Mode (PMM) Forecast Experiment
+
+[**HHSA-Sohail Pacific Meridional Mode Forecast Experiment**](https://github.com/arnoldsu/hhsa_sohail_pmm)
+
+This project extends the HHSA-Sohail framework to the Pacific Meridional
+Mode (PMM), including PMM SST and wind components.
+
+### Relationship between the repositories
+
+```text
+                    HHSA methodology
+                    Huang et al.
+                         │
+                         ▼
+                    HHSA-Python
+                         │
+              ┌──────────┴──────────┐
+              │                     │
+              ▼                     ▼
+       Niño3.4 / ENSO              PMM
+       HHSA + NN                HHSA + NN
+              │                     │
+              ▼                     ▼
+     hhsa_sohail_n34        hhsa_sohail_pmm
 
 # Method Overview
 
